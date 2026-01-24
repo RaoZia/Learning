@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.container table {
+  @apply w-full my-3 shadow-xl;
+}
+.container table th {
+  @apply bg-black text-white;
+}
+.container table td {
+  @apply bg-gray-200;
+}
