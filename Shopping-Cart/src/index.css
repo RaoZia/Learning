@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.NavBar {
+  @apply bg-gray-300 flex justify-between items-center py-3 px-5;
+}
+.navlink {
+  @apply mx-5 bg-gray-800 text-white px-2 py-2 rounded hover:bg-white hover:text-black;
+}
+.btn {
+  @apply bg-blue-400 text-white py-1 px-2 my-2 rounded hover:cursor-pointer;
+}
+.table {
+  @apply w-full;
+}
+.table tr th {
+  @apply px-5 py-2 border;
+}
+.table tr td {
+  @apply py-2 border text-center;
+}
