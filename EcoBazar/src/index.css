@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@theme {
+  --font-poppin: "Poppins", sans-serif;
+}
+
+.header-container {
+  @apply max-w-330 w-full mx-auto font-poppin;
+}
+.header-top-links select {
+  @apply outline-none cursor-pointer;
+}
+.header-top-links button {
+  @apply cursor-pointer;
+}
+.navigation-icons {
+  @apply w-8 h-8;
+}
+
+.navbar-container {
+  @apply font-poppin flex flex-col gap-5 sm:flex-row justify-between items-center py-4 text-white text-sm;
+}
+.header-nav-links {
+  @apply text-[#999999];
+}
+.feature-section {
+  @apply flex flex-wrap gap-10 lg:gap-0 justify-between p-10 shadow-xl rounded-md;
+}
+.feature-items {
+  @apply flex;
+}
+.feature-items h1 {
+  @apply text-sm font-semibold;
+}
+.feature-content {
+  @apply ml-2 w-70;
+}
+.feature-content p {
+  @apply text-sm  text-[#999999];
+}
+.feature-icons {
+  @apply max-w-10 w-full max-h-10 h-full text-[#00B207];
+}
+.categories-head {
+  @apply flex justify-between items-center;
+}
+.categories-heading {
+  @apply text-3xl font-semibold;
+}
+.categories-btn {
+  @apply text-[#00B207] flex items-center;
+}
+.categories-btn button {
+  @apply cursor-pointer text-lg;
+}
+.item-card {
+  @apply border border-[#E5E5E5] shadow-md max-w-50 w-full py-4;
+}
+.item-card:hover {
+  @apply border-[#00B207] text-[#00B207];
+}
+.item-card {
+  @apply text-center text-lg mt-3;
+}
+.products-head {
+  @apply flex justify-between items-center;
+}
+.products-heading {
+  @apply text-3xl font-semibold;
+}
+.products-btn {
+  @apply text-[#00B207] flex items-center;
+}
+
+.products-item-card {
+  @apply border border-[#E5E5E5] shadow-md p-3;
+}
+.products-item-card:hover {
+  @apply border border-[#00B207] shadow-md p-3;
+}
+.products-item-card:hover h1 {
+  @apply text-[#00B207];
+}
+.products-item-card:hover .bag-icon {
+  @apply bg-[#00B207] text-white;
+}
+.product-desc {
+  @apply flex justify-between items-center;
+}
+.product-desc-child h1 {
+  @apply text-sm text-[#4D4D4D];
+}
+.product-desc-child h2 {
+  @apply text-lg font-medium;
+}
+.deals-section {
+  @apply flex flex-wrap justify-center gap-5 md:flex-row;
+}
+.banner-content {
+  @apply absolute text-white  text-center max-w-100 w-full mx-auto mt-8;
+}
+.banner-content h1 {
+  @apply text-4xl font-bold mt-4;
+}
+.deal-time h1 {
+  @apply text-xl font-light;
+}
+.deal-time h2 {
+  @apply text-[12px] font-light;
+}
+.deal-btn {
+  @apply text-[#00B207] flex justify-center items-center cursor-pointer bg-white max-w-40 w-full mx-auto p-3 mt-4 rounded-3xl;
+}
+.deal-btn button {
+  @apply cursor-pointer;
+}
+.center-line {
+  @apply mt-6 text-lg;
+}
+.hot-deals-head {
+  @apply flex justify-between items-center;
+}
+.products-items-cards {
+  @apply flex flex-col gap-5 lg:gap-0 lg:flex-row;
+}
+.first-product {
+  @apply max-w-132 w-full mx-auto;
+}
+.product-add-btn {
+  @apply flex justify-between items-center;
+}
+.add-cart {
+  @apply flex items-center justify-center gap-2 cursor-pointer max-w-100 bg-[#00B207] w-full rounded-3xl text-white text-sm py-2;
+}
+.add-cart button {
+  @apply cursor-pointer;
+}
+.add-cart-icon {
+  @apply bg-[#F2F2F2] rounded-2xl p-2 hover:bg-[#00B207] hover:text-white;
+}
+.offer-end-time {
+  @apply flex  justify-center gap-2;
+}
+.offer-end-time h2 {
+  @apply text-[10px] font-extralight;
+}
+.latest-new-heading {
+  @apply text-center text-3xl font-semibold mt-15;
+}
+.latest-news-cards {
+  @apply my-8 flex flex-wrap  justify-center gap-5;
+}
+.latest-news-card {
+  @apply max-w-104 w-full shadow-lg;
+}
+.card-socials {
+  @apply flex justify-between mt-6;
+}
+.card-social {
+  @apply flex items-center gap-2 text-[#B3B3B3] text-sm;
+}
+.testimonial-head {
+  @apply flex justify-between;
+}
+.testimonial-heading {
+  @apply text-3xl font-semibold;
+}
+.testimonial-btn {
+  @apply flex items-center;
+}
+.testimonial-card {
+  @apply max-w-110 w-full p-6  bg-white rounded-md shadow-lg;
+}
+.testimonial-content p {
+  @apply text-[#4D4D4D] text-sm;
+}
+.profile {
+  @apply flex justify-between items-center mt-4;
+}
+.profile-img {
+  @apply flex items-center gap-2;
+}
+.social-top {
+  @apply flex flex-wrap justify-center items-center py-10 gap-5 md:gap-0 md:justify-between;
+}
+.social-bottom-imgs {
+  @apply flex flex-wrap justify-center items-center gap-5 mt-8;
+}
+.subscribe-section {
+  @apply flex flex-wrap gap-10   items-center justify-center  py-10 w-full md:justify-between lg:gap-0;
+}
+.subscribe-left {
+  @apply max-w-md w-full;
+}
+.subscribe-right {
+  @apply flex flex-wrap justify-center items-center gap-10;
+}
+.subscribe-right-icons {
+  @apply flex gap-5;
+}
+.subscribe-icon {
+  @apply hover:bg-[#00B207] hover:text-white cursor-pointer rounded-3xl text-black p-2;
+}
+.footer-top-right ul li {
+  @apply text-sm text-[#999999] py-2;
+}
+.footer-top-right h1 {
+  @apply text-white text-lg;
+}
+.slick-initialized .slick-slide {
+  padding: 0 10px;
+}
