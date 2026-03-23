@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-workSans: "Work Sans", sans-serif;
+}
+
+.header-container {
+  @apply max-w-300 mx-auto flex flex-col justify-between items-center md:flex-row;
+}
+
+.header-logo {
+  @apply flex items-center gap-2 font-bold font-workSans text-2xl text-[#2947A9];
+}
+.header-nav ul {
+  @apply flex flex-col gap-10 py-5 font-workSans text-lg sm:flex-row;
+}
+.reputation-container {
+  @apply max-w-260 mx-auto pt-15;
+}
+.reputation-container h1 {
+  @apply font-workSans font-bold text-4xl text-center;
+}
+.reputation-cards {
+  @apply flex flex-col items-center  justify-center sm:flex-row sm:gap-10;
+}
+.reputation-card {
+  @apply border border-gray-400 max-w-70 p-3 mt-13;
+}
+.reputation-card h2 {
+  @apply font-workSans font-bold text-xl mt-2;
+}
+.reputation-card p {
+  @apply font-workSans font-light text-[16px] mt-2;
+}
+.about-us-container {
+  @apply max-w-300 mx-auto py-25 flex flex-col items-center sm:flex-row;
+}
+.about-us-img {
+  @apply relative;
+}
+.about-us-content {
+  @apply bg-[#2947A9] max-w-120 w-full -mt-10 sm:absolute left-auto right-20  p-10;
+}
+.about-us-content h1 {
+  @apply font-workSans font-bold text-4xl text-white;
+}
+.about-us-content p {
+  @apply font-workSans font-light text-xl text-white my-5;
+}
+.about-us-content button {
+  @apply bg-white p-3 rounded-md font-workSans font-semibold text-lg text-[#2947A9] my-5;
+}
+.services-wrapper {
+  @apply bg-[#F6F8F7];
+}
+.services-container {
+  @apply max-w-300 mx-auto py-10;
+}
+.services-container h1 {
+  @apply font-workSans font-bold text-4xl text-center;
+}
+.services-cards {
+  @apply max-w-200 mx-auto  grid grid-cols-1    sm:grid-cols-2 sm:mx-auto items-center justify-center  md:grid-cols-3;
+}
+.services-card {
+  @apply bg-white text-[#2947A9] mt-10 max-w-50 w-full ml-auto mr-auto py-5 flex flex-col justify-center items-center;
+}
+.services-card:nth-child(even) {
+  @apply bg-[#2947A9] text-white;
+}
+.experience-container {
+  @apply max-w-300 mx-auto flex flex-col items-center justify-between gap-10 py-20  md:flex-row;
+}
+.experience-card {
+  @apply p-5 rounded-md shadow-xl;
+}
+.experience-card h1 {
+  @apply font-workSans font-bold text-5xl;
+}
+.experience-card p {
+  @apply font-workSans font-light text-gray-400  border-l-3 border-[#F9995D] text-[16px] ml-2 pl-2;
+}
+
+.experience-right h1 {
+  @apply max-w-100 mt-10 font-workSans font-bold text-6xl text-[#2947A9];
+}
+.experience-right p {
+  @apply max-w-70 my-10 font-workSans font-light text-xl text-[#525B7A];
+}
+.experience-right button {
+  @apply font-workSans font-light text-lg text-white py-3 px-5 bg-[#2947A9];
+}
+.form-wrapper {
+  @apply bg-[#F6F8F7];
+}
+.form-container {
+  @apply max-w-148 mx-auto py-15;
+}
+.form-container h1 {
+  @apply font-workSans font-bold text-center text-4xl text-[#292E3D];
+}
+.form-container p {
+  @apply font-workSans font-light text-center text-xl text-[#292E3D] mt-5;
+}
+.main-form {
+  @apply mt-10;
+}
+.main-form input {
+  @apply p-2 bg-white border border-gray-300 rounded-md;
+}
+.input-fields {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}
+.textarea {
+  @apply w-full mt-5 border rounded-md p-2 bg-white border-gray-300;
+}
+.form-btn {
+  @apply mt-7 flex justify-center;
+}
+.form-btn button {
+  @apply bg-[#2947A9] py-4 px-25 font-workSans font-semibold text-lg text-white;
+}
+.bottom-container {
+  @apply max-w-300 mx-auto flex flex-col justify-between items-center gap-10 py-20 font-workSans sm:flex-row;
+}
+.bottom-labels {
+  @apply flex mt-5;
+}
+.bottom-labels label {
+  @apply text-[#2947A9] font-workSans text-xl font-medium;
+}
+.bottom-labels p {
+  @apply ml-3;
+}
+.bottom-right p {
+  @apply text-[#2947A9] font-workSans text-xl font-medium;
+}
+.bottom-newsletter input {
+  @apply border p-2 rounded-md;
+}
+.bottom-newsletter button {
+  @apply bg-[#F9995D] p-2 text-white rounded-md ml-2 font-workSans cursor-pointer;
+}
+.fav-icons {
+  @apply w-10 h-10 rounded-full;
+}
+.footer-wrapper {
+  @apply bg-[#2947A9];
+}
+.footer-container {
+  @apply max-w-300 mx-auto text-white font-workSans py-4 text-center sm:text-start;
+}
